@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OAservice.Common
 {
@@ -11,9 +9,22 @@ namespace OAservice.Common
     /// </summary>
     public class Department
     {
-        public int id { get; }
-        public int? ParantId { get; set; }
+        [Key]
+        [DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)]
+        public int DepartmentID { get; set; }
+        public int? ParantID { get; set; }
+        [Required]
+        [Display(Name="部门名称")]
         public string DepartmentName { get; set; }
         public string Description { get; set; }
+        /// <summary>
+        /// 部门经理
+        /// </summary>
+        public virtual Staff DepartmentManager { get; set; }
+        /// <summary>
+        /// 导航属性,所属员工
+        /// </summary>
+
+        public virtual ICollection<Staff> Staffs { get; set; }
     }
 }

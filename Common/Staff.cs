@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace OAservice.Common
 {
     /// <summary>
@@ -19,13 +16,20 @@ namespace OAservice.Common
         /// 企业QQ
         /// </summary>
         public string EntQQ { get; set; }
+        //外键
+        [ForeignKey("Department")]
+        public int DepartmentID { get; set; }
         /// <summary>
         /// 所属部门
+        /// 导航属性
         /// </summary>
         public virtual Department Department { get; set; }
         /// <summary>
         /// 入职时间
         /// </summary>
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Display(Name = "入职时间")]
         public DateTime HireDate { get; set; }
 
     }
@@ -64,9 +68,10 @@ namespace OAservice.Common
     /// <summary>
     /// 技术员类
     /// </summary>
-    public class Technician : Staff
+    public partial class Technician : Staff
     {
-        public SkillRank SkillRank { get; set; }
+        [DisplayFormat(NullDisplayText = "未设置")]
+        public SkillRank? SkillRank { get; set; }
         /// <summary>
         /// 当前积分
         /// </summary>
