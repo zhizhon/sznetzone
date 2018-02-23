@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e3245463-6294-4d31-b2e1-378d37b31068" name="UMLUseCaseDispatcher" linkedPackageId="64ec1bc3-6900-41f5-a026-163ce30136b3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="5e2196c2-3c9d-4045-be3a-cad415a31539">
+      <profileInstance Id="56f5398f-1643-4411-97c5-26379285bc1a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f1fc2da3-6958-481e-a47a-55b2d9c58c59">
+      <profileInstance Id="76a67e8e-7863-4de8-9aa2-383583996f2f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3352ea9a-9020-45e5-a7ab-719b7d188514" name="公司值班调度员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7c93c1b-660f-412d-a561-a146145e24ce" />
+        <targetEnds>
+          <association Id="b6652f55-69ae-45ef-80ef-ac4cc9f0515c" isDerived="false" sourceEndRoleName="公司值班调度员" targetEndRoleName="登陆" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0c3de914-7149-41d2-92ed-bc96a6cacdee" LastKnownName="登陆" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fdc08bf7-219b-48a9-b318-57c36d891591" name="公司值班调度员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="378e7f9b-25aa-444e-a56c-4973e382e488" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="113367b6-6e41-4d07-85af-c2e84ed7c370" name="登陆" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ce05c5b8-36bd-4ece-b993-62cf3bb4eb75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51ee4572-6ea4-4e60-8023-f82990074fbb" />
+          </association>
+          <association Id="ed311fe9-1886-474f-8149-c45b12644bb2" isDerived="false" sourceEndRoleName="公司值班调度员" targetEndRoleName="浏览报障记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f57ffb0d-f43c-4515-9b5b-13a5a26c2cd1" LastKnownName="浏览报障记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c7c7091-8733-4c12-9768-9daa91c89f7a" name="公司值班调度员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5b810137-8784-4f45-ae43-0d7bfbfb598f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc9da719-e66d-47ff-908b-8bf4ec1cc451" name="浏览报障记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="295adb37-c08a-45a4-a66d-37b57b6a75da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="20461ebe-d0cc-45b9-b19c-21a1a4150985" />
+          </association>
+          <association Id="28ceeb9b-a811-4348-96d4-094ec4e3f3e0" isDerived="false" sourceEndRoleName="公司值班调度员" targetEndRoleName="处理客户报障" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4b55f627-1dbc-4eac-a7e4-a14b935a56e1" LastKnownName="处理客户报障" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2cfba7f-62cc-44b5-9d06-394ff8ac7d36" name="公司值班调度员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cc991cff-65b5-4dbc-87c0-8901ed6f7488" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d7bb792-b63d-4bf9-bf45-e27ea39e1207" name="处理客户报障" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f1b9eca-2a25-49a5-85a7-945951121b98" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="75c93962-2a5e-4cd4-9b91-c25be08dcd51" />
+          </association>
+          <association Id="f648d7dd-cc66-492f-9802-cb6b6fb04c5d" isDerived="false" sourceEndRoleName="公司值班调度员" targetEndRoleName="浏览客户资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="95f3d07f-cebf-4fde-827c-928148c5c90e" LastKnownName="浏览客户资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f194368-45b6-4f6d-a7c7-cdd7fce01474" name="公司值班调度员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="458dc4d0-640c-4f71-92a7-81197589e06e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca5e6d04-aad5-4fff-a75b-b2d134796211" name="浏览客户资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2af54e4f-f215-49ff-a868-a885bb9e79a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="042e9c67-a621-4c2a-9804-65b2db476278" />
+          </association>
+          <association Id="fe64d0c6-fc18-42b1-9306-c74cc001c6ba" isDerived="false" sourceEndRoleName="公司值班调度员" targetEndRoleName="填写日志" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="859ae10c-3fb5-4772-8207-9cce8ea04c68" LastKnownName="填写日志" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b471364a-d7e8-411c-9d6e-637f5beac199" name="公司值班调度员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4d19f4b-f777-4372-b7c0-d936db796dae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d64e425b-c893-4bdf-afb5-42e5ee76b4bb" name="填写日志" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d63a3c0f-2f96-4b56-bd53-21a928982501" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ad82123-f13b-4f38-a6e4-f1e04cba893c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c3de914-7149-41d2-92ed-bc96a6cacdee" name="登陆" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f5a3a17-6174-48eb-bc40-51420359730b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f57ffb0d-f43c-4515-9b5b-13a5a26c2cd1" name="浏览报障记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e21c922-babb-4570-abf8-9321fdaef8bf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bbe8f764-3851-45fd-9bd5-2acbc830f3ec" name="远程处理" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15f97006-23cc-4bbc-a6be-4095ee0831ad" />
+        <additions>
+          <include Id="1e115a5a-0b23-4753-872d-17a6517773b1">
+            <useCaseMoniker Id="a81d813f-4e77-445f-abb5-54d51d374ddb" LastKnownName="远程处理不了，报障单转为上门单" />
+            <elementDefinition Id="40c00638-3390-4923-bde6-31e1d38d28f3" />
+          </include>
+          <include Id="55759797-b446-4a4a-86e7-c0dabab16fe9">
+            <useCaseMoniker Id="1d1641e2-cc98-4d1b-baff-517f00a163f7" LastKnownName="处理完成结单" />
+            <elementDefinition Id="062bdfa7-966d-492d-a5c7-33e4e613689c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a81d813f-4e77-445f-abb5-54d51d374ddb" name="远程处理不了，报障单转为上门单" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c146700-da0d-4b2b-8061-d318ff262a99" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b55f627-1dbc-4eac-a7e4-a14b935a56e1" name="处理客户报障" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e0ba21b-b800-4831-9661-321a44eb9e6e" />
+        <additions>
+          <include Id="92721f2a-8ffc-4428-8ef5-2add02b390c4">
+            <useCaseMoniker Id="bbe8f764-3851-45fd-9bd5-2acbc830f3ec" LastKnownName="远程处理" />
+            <elementDefinition Id="ee46d42a-f95e-4aa2-b331-1772fe4c2a09" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f58725a2-aced-4cd4-81c0-e187c8afe650" name="技术员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd9a6d5c-0f56-4455-a0f6-c08635475087" />
+        <targetEnds>
+          <association Id="b836635f-b5f1-4d00-b41c-204176176203" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="报障单转为上门单" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a81d813f-4e77-445f-abb5-54d51d374ddb" LastKnownName="远程处理不了，报障单转为上门单" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be767d5a-ef64-4ab9-82c4-5316ac459c0f" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3308a85b-8e47-43be-ab14-ea6eafd8f1b2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7b9f89d-3c0a-4d0b-9509-13f25197070b" name="报障单转为上门单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0be01255-96c0-4a76-9641-c37728630b20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="800a1d29-142e-4585-b042-d1720f461a17" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="95f3d07f-cebf-4fde-827c-928148c5c90e" name="浏览客户资料" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="470d4677-ce05-4b5f-b1ea-c9e393ce15c3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="859ae10c-3fb5-4772-8207-9cce8ea04c68" name="填写日志" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da6c7db8-e635-4fa7-a587-37024d0139d1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1d1641e2-cc98-4d1b-baff-517f00a163f7" name="处理完成结单" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dc4d824-0d55-48a9-8a00-e1fe0fa5f5b0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="64ec1bc3-6900-41f5-a026-163ce30136b3" name="Modeling">
+    <elementDefinition Id="24715200-7489-4e5f-bbe8-df362a5f8ba4" />
+  </package>
+</useCaseModelRoot>

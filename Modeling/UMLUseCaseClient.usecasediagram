@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="73377a23-dbb8-4b83-91ea-cf907417622f" name="UMLUseCaseClient" linkedPackageId="49cb501e-e5b1-400b-8ca2-c20a4a6b66db" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="189c4f87-a65d-4e58-9efe-3868c8a2a391">
+      <profileInstance Id="b0f9f7ba-3305-4883-8fbd-16217d9f0688" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7772957e-dd84-4e62-8866-e9e980bf9a5a">
+      <profileInstance Id="cf6748a9-c5da-40c0-afb4-0b889a435008" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a4892717-c320-491e-a3f2-42f82bee5a07" name="PC端客户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b52ec52-7489-4c4f-8fd0-31cf93c2f42a" />
+        <targetEnds>
+          <association Id="1195d333-d5be-409d-a2d4-1eaf186cb5e9" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="浏览公司网站" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="415a5879-d740-405f-ac41-9fb774117f44" LastKnownName="浏览公司网站" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62439eb7-564b-4e18-b237-62788e685e79" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a3eda853-2dff-4f50-abb4-1de857f70849" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee1aed7c-e064-4a85-aff1-5dfe0e395589" name="浏览公司网站" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d72adae4-ea7c-460d-a284-48db56856811" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8c663715-57ad-462b-b281-58100e9ea894" />
+          </association>
+          <association Id="79cf6aff-969c-43f6-88c9-7442207ee1ee" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="登陆" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0665155d-9f2b-43fc-af25-31c953668a7f" LastKnownName="登陆" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6760fc9-44af-497e-b851-eacb01f6c2a1" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6643a670-96cc-4e8e-b4c5-14537065562d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="509ca224-ee29-4ddb-bf25-a71fa7ab4c52" name="登陆" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="862b1348-fc94-4014-bbaa-99e47360ab4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc34a218-d1ad-457c-996e-ee7b691e8062" />
+          </association>
+          <association Id="a1276745-6110-4e9c-89d0-4ae88db26192" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="修改客户资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7620399c-4f8d-49f5-979d-5888cc14188e" LastKnownName="修改客户资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08a6b7eb-7447-4af2-96a1-c1a145b764ea" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ade52188-d23b-41de-9841-22c6fed4d494" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f932d6b-4753-42c8-82ba-b25ea75cf197" name="修改客户资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d96bb61a-8d29-40ef-b370-0e7a124a9ad6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4feab8c2-da2b-41f1-bc05-f2b2968587ed" />
+          </association>
+          <association Id="5c3d6c34-cb1c-4082-a799-3832d6c74978" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="报障" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="38729bd5-f776-4be5-abe3-f3553c158df5" LastKnownName="报障" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05507354-290c-4fc7-8269-50f43542db58" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="55f75226-fa72-44fa-93fa-ce1c473c13ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7a29769-9e71-4cfe-b47c-d4b411e284e9" name="报障" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e577e25a-cdf0-4a64-b944-01737b16c43f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5684ef67-0838-4b9b-af5d-1466725e410f" />
+          </association>
+          <association Id="3a21de47-4df2-436d-a1bd-1ce5cab23cd2" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="查询已购买产品" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="16a9aedd-b516-4ce2-a72a-8ad8ed8cd395" LastKnownName="查询已购买产品" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a3fc563-9b13-406d-a822-3f04750155ab" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22fc662e-b487-4719-b579-3110b06506d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2114be2b-1b44-4cc0-83fb-40553b24bccf" name="查询已购买产品" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e28d7f3-d7b8-495d-a9cc-6ba3100c1bf6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1949be6a-9628-4da7-9254-183fa5de21ae" />
+          </association>
+          <association Id="6502ab08-4c0d-48ab-ba4b-342b0ff09870" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="查询报障记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="860a05c9-36ff-4f5b-b77b-0c571ab9c9f5" LastKnownName="查询报障记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c76e6eb-45a1-46e0-9be0-fbbc92256f59" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="46052905-31d1-45fb-95c3-8c34c9282558" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="daff3e5f-035f-4aca-adb8-1a0f395d193b" name="查询报障记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="779592bd-16f6-4f42-9d3d-9bfa6de4a182" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31baf0cb-c38b-459a-98ae-5b0ce6ccf45d" />
+          </association>
+          <association Id="e90918b1-024a-4192-899e-fdda8f65fea0" isDerived="false" sourceEndRoleName="PC端客户" targetEndRoleName="查询付款记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="78e2a967-a162-458a-a942-c48288a011ce" LastKnownName="查询付款记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c80bafd8-b85a-4252-a427-bfc647186b49" name="PC端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="124062ea-15fb-4680-b828-7504cb26d04b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b10902bd-4c4d-447d-8d08-6be4772716a9" name="查询付款记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a0c766d5-831b-473a-979e-066e7ad093ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd3dd3ca-e0d2-428f-9206-ae7332133675" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7080493b-6c94-461c-9147-79cb96f4709a" name="移动端客户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1903d73-8173-439f-b599-43288c0ff7a8" />
+        <targetEnds>
+          <association Id="79700038-7011-473f-a557-5dfefacb48ff" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="浏览公司网站" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="415a5879-d740-405f-ac41-9fb774117f44" LastKnownName="浏览公司网站" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dbd6c23d-77b5-48d2-806a-e787be24ae2f" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44b0cbff-a084-4e37-9288-6584bd24429c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da33899e-8d07-4fa3-a3ba-4fae310ac7d9" name="浏览公司网站" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b4a43ba2-36c6-44a7-bb66-ee7b539045c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd8d30cf-9844-4c65-99d1-41bc7b3c7b26" />
+          </association>
+          <association Id="7bc4fec4-c818-40ee-8ee3-9c15aeb38742" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="登陆" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0665155d-9f2b-43fc-af25-31c953668a7f" LastKnownName="登陆" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73035a27-a469-4d5a-abee-f5d2736f60a1" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ba5056c-e6ca-4209-82ee-030309bae68f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a79ddd3b-bb44-4770-a414-5361474b99b8" name="登陆" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ec56660-2df1-42d2-9df3-b547994cd7d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c1170b3-6882-4325-878a-bd6fc86f670a" />
+          </association>
+          <association Id="61cf5f54-46b1-4792-b861-29fde6ae7cea" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="修改客户资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7620399c-4f8d-49f5-979d-5888cc14188e" LastKnownName="修改客户资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18ad7539-28b8-4958-811b-d45bd0c879fe" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5337f94e-7585-452c-9c9e-5fc153eea1f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d77ae3f4-b597-493d-97a1-11b9058ab4c9" name="修改客户资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c326303-c78b-4989-bee4-37a1bd88bb52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3b9261d-2cb3-400a-8991-337c23d44d16" />
+          </association>
+          <association Id="6339a8b1-1aed-4d78-87e3-1bf483d9f24c" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="报障" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="38729bd5-f776-4be5-abe3-f3553c158df5" LastKnownName="报障" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ce08402-727e-477d-a75a-aed2c76d53d7" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="520bc83c-09c1-457a-bb7a-1c30f6f5218a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad80c5bb-fc43-474a-9d9a-9d19dc011f95" name="报障" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fc87f297-47da-4671-af15-fbfc279d0f19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62c1d407-01d0-45e2-8ee4-c51bed6cd7ac" />
+          </association>
+          <association Id="d914fdf3-f383-4270-a1b0-d294923bef0f" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="查询已购买产品" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="16a9aedd-b516-4ce2-a72a-8ad8ed8cd395" LastKnownName="查询已购买产品" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0b5ce6c-0064-47ba-b8a9-e88312948dfc" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7b3c77b-a2e2-46f9-a3d8-99e0b8246d4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="616bde99-70cf-469b-859a-699b7ee4fe55" name="查询已购买产品" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a44c3fb0-7639-4481-94f3-32809bc26816" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="edb61f1b-cfb4-48db-8fee-281456703bf8" />
+          </association>
+          <association Id="cbfda88a-b709-4b21-9bd2-d51a3b99c8e7" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="查询报障记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="860a05c9-36ff-4f5b-b77b-0c571ab9c9f5" LastKnownName="查询报障记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a186d281-9f22-45f7-84cc-afbdef24011a" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c56b274a-1c74-4573-96a8-52381a562f2a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7626d161-9f1e-48e8-9d9a-2e73fc268f13" name="查询报障记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="612fcaa8-fee5-4990-a2f3-abbff2a1f2cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9373fa92-63b3-4270-bde6-90509b93298d" />
+          </association>
+          <association Id="4586da36-c73c-4285-a4dd-29bc53f0d5ee" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="查询付款记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="78e2a967-a162-458a-a942-c48288a011ce" LastKnownName="查询付款记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aac1fcbe-9767-4964-8909-13a44ff01700" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9fb819b0-e111-478c-89a6-a04ce64432d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ebc09d8-688f-4a65-b7fe-2125657b097a" name="查询付款记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="30d984f5-fe68-4458-b1bd-1881fad3c5c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b407f9b-774d-442b-adb5-b63322bf11d7" />
+          </association>
+          <association Id="e22a78f7-54a6-48c8-9bc3-e95bad7a1d5c" isDerived="false" sourceEndRoleName="移动端客户" targetEndRoleName="付款" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c195e817-0815-4834-af75-802456ef0c55" LastKnownName="付款" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2c0e628-0822-4162-a5bd-c2c2bf5bec9d" name="移动端客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="83d6f134-56a5-464f-992c-2c2ce9d6d13b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="977a7889-e4e0-4721-9c4f-82baa6bd67f1" name="付款" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a70a086-6e45-41b8-8363-f09c8bf6075e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4c5db99-432a-48d5-a3bc-1197f38d9f6a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0665155d-9f2b-43fc-af25-31c953668a7f" name="登陆" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d140a78-048e-411c-bfe8-cf82857064cf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="163472a1-e832-40b9-82e1-13cdaa3577c1" name="游客" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c4a8594-6e85-4e1c-befd-347ab174333f" />
+        <targetEnds>
+          <association Id="cf1a4030-b696-4881-9262-f7d9af68c2f5" isDerived="false" sourceEndRoleName="游客" targetEndRoleName="注册" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3ec0aa30-f414-41f7-83f8-07cadc703474" LastKnownName="注册" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b747d32-c1a5-4492-8b7d-280b9df0a978" name="游客" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2fe85e55-9a79-44ec-95e6-e7aa9f291ed7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e142fff-072b-4384-9140-dc27835933db" name="注册" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b962822-10e7-44e7-8818-e52e259acb22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9950608-73c9-450e-85f6-ea1ee5610a7a" />
+          </association>
+          <association Id="3373f249-c18b-4705-b4f3-05e0d0a802fc" isDerived="false" sourceEndRoleName="游客" targetEndRoleName="浏览公司网站" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="415a5879-d740-405f-ac41-9fb774117f44" LastKnownName="浏览公司网站" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6a4765e-31a8-48f1-b75c-3dd0ac43f62d" name="游客" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42b51a0b-e769-4235-864a-0e23f1b5bfe1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f02afabf-2b19-46f4-adc3-ae23e1abbeab" name="浏览公司网站" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="84a6ba6a-9685-4909-aba2-14013709e37c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa6ee497-2fb9-4763-b571-b81421e17d23" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3ec0aa30-f414-41f7-83f8-07cadc703474" name="注册" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="597cf3a7-5fdd-4615-a951-2d89b8ab7386" />
+        <additions>
+          <include Id="e0dfc76d-541d-4e8f-9890-26aa8e94740a">
+            <useCaseMoniker Id="4ffccd0a-785c-429d-b5b6-b0155a569599" LastKnownName="客户填写资料" />
+            <elementDefinition Id="512e92cc-27f8-4edb-945a-7ee1bbba1e68" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="415a5879-d740-405f-ac41-9fb774117f44" name="浏览公司网站" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d84a0102-3528-440a-ad9b-31b0fce3c04a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7620399c-4f8d-49f5-979d-5888cc14188e" name="修改客户资料" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bbf6cc7f-8ef1-4986-8bd1-6dae2940947e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="38729bd5-f776-4be5-abe3-f3553c158df5" name="报障" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f6807af-cefc-4775-aa7b-cdaa4ce3fd28" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c195e817-0815-4834-af75-802456ef0c55" name="付款" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b8f868c-2a67-4029-99e7-14ddbb6d077e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16a9aedd-b516-4ce2-a72a-8ad8ed8cd395" name="查询已购买产品" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19c37b53-dab8-4fb4-bf16-ffab1361a752" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="860a05c9-36ff-4f5b-b77b-0c571ab9c9f5" name="查询报障记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="863ad22b-6246-497c-ad47-1abc598b9936" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78e2a967-a162-458a-a942-c48288a011ce" name="查询付款记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6376107-daa8-4680-8448-16174039a5d2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3b75d4eb-d38e-4b57-a8b7-5fc92a8f832f" name="公司审核员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2eb426e-0365-4c02-bfe8-2d608ec0d455" />
+        <targetEnds>
+          <association Id="2ad4c815-1973-4e82-82ab-3e8fd8afc752" isDerived="false" sourceEndRoleName="公司审核员" targetEndRoleName="客户填写资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4ffccd0a-785c-429d-b5b6-b0155a569599" LastKnownName="客户填写资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68d040d4-6d53-4440-9b62-2235d82b2a3d" name="公司审核员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8efb624-eea4-4bba-8d0a-b62039e26ec1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afe6e9f1-e99b-4a9e-b33c-ad7d6932a412" name="客户填写资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3c701e59-e8fb-488f-a6e8-77dea4acf48b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04d886d2-112f-4e24-bea4-ad0d9d47a3f6" />
+          </association>
+          <association Id="edf1dfc9-02c5-4798-b59c-d35b9738fe76" isDerived="false" sourceEndRoleName="公司审核员" targetEndRoleName="修改客户资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7620399c-4f8d-49f5-979d-5888cc14188e" LastKnownName="修改客户资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6cb8626-7f0a-4aaa-8d4c-24ec43fc23bb" name="公司审核员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d2a66a8-f6cb-476d-87b1-151395907f19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e93872ba-777b-482b-943f-7653cbdb5712" name="修改客户资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="857abc0a-cc9a-4200-b5ca-30e84d9cf020" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e9b061b-bc93-40a8-ac79-230219d117be" />
+          </association>
+          <association Id="f621b906-5d65-470d-a559-6bca7b8607b5" isDerived="false" sourceEndRoleName="公司审核员" targetEndRoleName="付款" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c195e817-0815-4834-af75-802456ef0c55" LastKnownName="付款" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="843bb7b9-bffe-4cf8-b358-e0150a60a5e1" name="公司审核员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0b7ac06-1b79-44f8-8a64-a058e11f8408" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0606cd93-6aaa-4569-a850-9b3bf7111b1a" name="付款" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fcd6ddf9-900d-445f-a253-de2cc08b5939" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b09dee7d-9872-46a6-b90c-d413164cea28" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4ffccd0a-785c-429d-b5b6-b0155a569599" name="客户填写资料" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c6263ee-c6ce-4e21-bc73-29339e1ac89f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="49cb501e-e5b1-400b-8ca2-c20a4a6b66db" name="Modeling">
+    <elementDefinition Id="24715200-7489-4e5f-bbe8-df362a5f8ba4" />
+  </package>
+</useCaseModelRoot>

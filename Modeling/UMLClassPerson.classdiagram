@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="ae2a090a-2186-43e1-8b0b-f7fcb0522c5b" name="UMLClassPerson" linkedPackageId="d880c5d7-b49f-4375-9f88-b1a65b03129e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="eabae53f-50bb-4f7e-9791-c17a3f2c58ee">
+      <profileInstance Id="676bbca6-d93d-47af-8540-554845e2c5f8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4a9cd188-f2ce-4f5b-910c-295570342bff">
+      <profileInstance Id="63ba417e-54ee-4501-8763-902990bc55ac" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6910ede8-6a90-4f2f-a94a-1c877a0e08b5" name="Person" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1084c44c-43d5-4928-8154-f8db0fd49e2d" />
+        <ownedAttributesInternal>
+          <property Id="f5b38ee8-8a1c-4e70-9054-f28b77e88d78" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="56d18dd5-f8e5-42f8-adac-0e42d600598d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b618464f-2f65-4bc1-b6f3-faedca73b969" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="3f64e042-9e04-4030-af0a-ff8164f0da4c" name="MobilePhone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f789029-bd10-4ab4-9e7a-11f28616b796" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="01603a86-5118-4eef-bcad-0e24e62b9219" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="01603a86-5118-4eef-bcad-0e24e62b9219" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b618464f-2f65-4bc1-b6f3-faedca73b969" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d880c5d7-b49f-4375-9f88-b1a65b03129e" name="Modeling">
+    <elementDefinition Id="24715200-7489-4e5f-bbe8-df362a5f8ba4" />
+  </package>
+</logicalClassDesignerModel>

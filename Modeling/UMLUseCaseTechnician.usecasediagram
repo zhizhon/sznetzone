@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="78f26068-ec60-49cb-bdcf-8b8370fc2b60" name="UMLUseCaseTechnician" linkedPackageId="9a33a8ca-f48a-4324-b46c-dee130d44573" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8862f151-8d95-4b33-9167-717424dcbf30" name="技术员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd9a6d5c-0f56-4455-a0f6-c08635475087" />
+        <targetEnds>
+          <association Id="c0bf59b8-0b96-4e9d-b38f-9082badaebea" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="登陆" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="190326bd-e6e0-46a9-a80b-209f777a8743" LastKnownName="登陆" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55be3128-761f-477d-98f9-99f1d4311072" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="226f3d5d-bc23-4a11-81f8-3cbada2155c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="506af009-737e-4104-ba8c-cd4ec8656e4f" name="登陆" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="22905ad4-5897-4ddb-ba71-410873574293" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11468b72-d370-4195-a5eb-feb1351b3144" />
+          </association>
+          <association Id="00a36bb6-01be-4b2a-ae2f-7a72a3d7c859" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="处理报障" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="49b63e59-55d2-4871-a736-fb5066747cb2" LastKnownName="处理报障" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa7c429b-7458-4ebb-908c-117bf184f0d8" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="752cf665-1260-476f-8660-f99804c5fe67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b6699b6-3027-4db7-b9bc-632aa1bab1d9" name="处理报障" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9dece815-0218-492d-a16d-dcd0c1782a1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="41014629-2aaa-4515-9643-4c376f0f7eb6" />
+          </association>
+          <association Id="9346c22b-ec7b-4224-b12a-06c5e33b6aca" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="填写日志" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="be15244e-ab8f-45d5-b2d7-9eed9d3a48ca" LastKnownName="填写日志" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2eb7001b-80e5-4b63-bc10-b32e0c8536e3" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c0d2baff-b6ce-4ec9-aeae-859412a78c80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3b1a2cd-0397-453a-a332-052b75fc618c" name="填写日志" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0d225077-419d-496f-82db-dadcfc8adfa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a1919f9e-6f3a-4789-9b3f-9229cb919d33" />
+          </association>
+          <association Id="48f542c3-6a4f-4332-b3ef-6dfb58fed114" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="查询处理故障记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fab78357-bb11-43b3-8d46-912239478c02" LastKnownName="查询处理故障记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2c2b3a0-ff32-40ca-bd6d-149f025231ac" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa82dc87-fcd2-4336-9bc1-2385e531ce4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="677b9178-82d7-4b6c-99fb-064e6ca16509" name="查询处理故障记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4210785e-cd55-42f8-ac77-2faafb73bdb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="70a907f0-f48a-48f3-a798-fed3aa8f069d" />
+          </association>
+          <association Id="21da6049-5ffe-46cc-9bed-7a50421cde82" isDerived="false" sourceEndRoleName="技术员" targetEndRoleName="修改个人资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="14ff2c7a-83eb-4067-b72b-11aaf40a9cea" LastKnownName="修改个人资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da939fed-2444-42b8-8f8f-6d38e8e16445" name="技术员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50a078a7-eaae-4396-83e3-9c9fed89d6a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36330322-26c6-4b99-a2e0-069f7bc314b7" name="修改个人资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3aabfa2f-9a1f-4e86-a0f0-e4796077ba08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="948be2bf-6e7f-406e-a82f-7fadc0577e54" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="190326bd-e6e0-46a9-a80b-209f777a8743" name="登陆" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10a3102b-bb54-483d-a989-ce4bff2da03d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="49b63e59-55d2-4871-a736-fb5066747cb2" name="处理报障" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad5f1a10-786c-4eb7-aee7-b142bb68d180" />
+        <additions>
+          <include Id="3acb10bd-4c08-4f98-8d8b-63a796ec981e">
+            <useCaseMoniker Id="dc61f384-b47d-4cd4-a4f9-0406c8f67a65" LastKnownName="远程处理" />
+            <elementDefinition Id="a6c7036e-a9b6-4dc7-8080-09cf302dd168" />
+          </include>
+          <include Id="44e493f5-960b-4bdb-b7e6-9ad6bde9c833">
+            <useCaseMoniker Id="d4e2918f-629e-4ec4-8652-710cf01411ef" LastKnownName="上门处理" />
+            <elementDefinition Id="efa71b18-909b-4b27-be31-8996dd3dd74a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be15244e-ab8f-45d5-b2d7-9eed9d3a48ca" name="填写日志" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d3c8923-471b-41f5-bc75-9af306acb6e5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fab78357-bb11-43b3-8d46-912239478c02" name="查询处理故障记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cccd4689-2c7b-4f54-90ee-55a8388ce0d7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc61f384-b47d-4cd4-a4f9-0406c8f67a65" name="远程处理" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80eb7528-28cf-4820-9f63-ec5a580776d1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d4e2918f-629e-4ec4-8652-710cf01411ef" name="上门处理" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f50623dd-1907-4b9a-8234-3ad7229f0eb5" />
+        <additions>
+          <include Id="667627ba-da5f-4d7d-9c36-b71ffd50b776">
+            <useCaseMoniker Id="24161016-c927-4710-9b78-9bebd272d016" LastKnownName="填写车费开支" />
+            <elementDefinition Id="bbbdcc38-7d8c-4427-901a-60b04e39b8da" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24161016-c927-4710-9b78-9bebd272d016" name="填写车费开支" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b44f7e57-3429-487c-bfd0-f45537bd22d6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="14ff2c7a-83eb-4067-b72b-11aaf40a9cea" name="修改个人资料" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b9b91178-c84c-40c3-9b29-1a0b726d62b9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8567fefb-2fb6-499d-bde9-278b6536a8c0" name="公司审核员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7e92509-d249-462c-9fcf-5216be630b10" />
+        <targetEnds>
+          <association Id="38e19d9a-467b-4a86-b533-9d9527b6473e" isDerived="false" sourceEndRoleName="公司审核员" targetEndRoleName="填写车费开支" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="24161016-c927-4710-9b78-9bebd272d016" LastKnownName="填写车费开支" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25558924-502a-462e-8c0d-e798fc3e8151" name="公司审核员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3e7d71a6-4461-40e0-a36e-bdcb956c988b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4a4e529-36d6-4d4b-9701-7c1c53955f3b" name="填写车费开支" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1b5ae2ea-9a67-4b54-a73f-34495fd2e8d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7e32224-3f7b-41e9-a1cc-7d13c4e51e00" />
+          </association>
+          <association Id="e4668ce6-5ba1-43b7-b064-29f3c4c5a3b2" isDerived="false" sourceEndRoleName="公司审核员" targetEndRoleName="修改个人资料" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="14ff2c7a-83eb-4067-b72b-11aaf40a9cea" LastKnownName="修改个人资料" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6e40f44-8880-4263-96df-acaa6bbfc48a" name="公司审核员" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="262ac445-2ef9-4293-8645-33ea2a0ce04b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8da6635-b381-43fb-9e79-31562049240f" name="修改个人资料" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3d5609b-d661-4ddb-850d-8e1ee2b398c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4e7853b-7f0a-4b1f-b727-0386989d3622" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9a33a8ca-f48a-4324-b46c-dee130d44573" name="Modeling">
+    <elementDefinition Id="24715200-7489-4e5f-bbe8-df362a5f8ba4" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4337b651-31b5-4a02-a618-d7bb5e68363e">
+        <profileInstance Id="d0d29a96-860e-496e-a336-5bc2338ae295" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9e592451-acee-4ed1-8017-3ae75c3a0b86">
+        <profileInstance Id="ee8a3988-92c5-4f8c-8412-4de308a7c399" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
